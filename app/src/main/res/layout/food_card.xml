@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/cart_background"
+    android:elevation="3dp">
+
+    <TextView
+        android:id="@+id/titleMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="TextView"
+        android:textColor="#373b54"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mealView"
+        android:layout_width="98dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMeal"
+        app:srcCompat="@drawable/drinks" />
+
+    <TextView
+        android:id="@+id/amountCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fee"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mealView"
+        app:layout_constraintStart_toStartOf="@+id/mealView"
+        app:layout_constraintTop_toBottomOf="@+id/mealView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        android:text="$"
+        android:textColor="#FF3D00"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/amountCard"
+        app:layout_constraintEnd_toStartOf="@+id/amountCard"
+        app:layout_constraintTop_toBottomOf="@+id/mealView" />
+
+    <TextView
+        android:id="@+id/addButton"
+        android:layout_width="57dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_orange"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:text="+Add"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mealView"
+        app:layout_constraintStart_toStartOf="@+id/mealView"
+        app:layout_constraintTop_toBottomOf="@+id/amountCard" />
+</androidx.constraintlayout.widget.ConstraintLayout>
